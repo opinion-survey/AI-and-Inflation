@@ -1,0 +1,415 @@
+%\documentclass[12pt]{article}
+\documentclass[a4paper,12pt]{article}
+% -------------------------------------------------
+% Basic packages
+% -------------------------------------------------
+\usepackage{here}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% -------------------------------------------------
+% Math packages
+% -------------------------------------------------
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{bm}
+
+% -------------------------------------------------
+% Table and figure packages
+% -------------------------------------------------
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{dcolumn}
+\usepackage{lscape}
+
+% -------------------------------------------------
+% Formatting packages
+% -------------------------------------------------
+\usepackage{times}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{enumerate}
+\usepackage{ulem}
+\usepackage{comment}
+\usepackage{color}
+
+% -------------------------------------------------
+% URL and citation packages
+% -------------------------------------------------
+\usepackage{url}
+\usepackage{natbib}
+
+% -------------------------------------------------
+% Page layout
+% -------------------------------------------------
+\usepackage[margin=2cm]{geometry}
+
+% -------------------------------------------------
+% Hyperlinks
+% -------------------------------------------------
+\usepackage[
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+]{hyperref}
+
+
+% hyperrefパッケージ（最後に追加）
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=blue,
+    bookmarks=true,
+    bookmarksopen=true,
+}
+
+\setlength{\extrarowheight}{0pt}
+
+\setlength{\oddsidemargin}{-0.4cm}
+\setlength{\textwidth}{500pt}
+\setlength{\textheight}{630pt}
+\renewcommand{\baselinestretch}{1.2}
+
+\setlength{\topmargin}{-15pt}
+
+
+\begin{document}
+
+
+\title{\vspace{0mm} Real-Time Inflation Expectations:\\ Households vs. Generative AI\thanks{Nakazono acknowledges financial support from JSPS KAKENHI Grant Numbers JP25H00544.
+Takahashi acknowledges financial support from JST SPRING, Japan Grant Number JPMJSP2179 and the Yokohama Academic Foundation.
+Tango acknowledges financial support from JSPS KAKENHI Grant Numbers JP25K23114.
+}
+}
+
+\author{
+Gaku Tanabe\thanks{Yokohama City University} \ \ \ \ \
+Yoshiyuki Nakazono\thanks{Yokohama City University} \ \ \ \ \
+Jun Takahashi\thanks{Yokohama City University} \ \ \ \ \  
+Kento Tango\thanks{Yokohama City University}
+}
+
+\date{}
+
+
+
+\maketitle
+
+\vspace{5mm}
+
+\abstract{
+We compare real-time inflation expectations between households and generative AI using identical survey settings. We find that generative AI exhibits systematically downward-biased inflation expectations with significantly lower variation than households. These results suggest important differences in how households and AI process inflation information.
+}
+
+\vspace{15mm}
+
+\begin{tabular}
+[c]{ll}
+\textit{JEL Classification: } & C90;\ D84;\ E27;\ E31;\ E58;\ E71\\
+\textit{Keywords: } & Generative AI; Inflation expectations; Information provision;\\
+& Large language models; Survey experiment
+\end{tabular}
+
+\vspace{13mm}
+
+ \thispagestyle{empty}
+
+
+
+% \clearpage
+% \tableofcontents
+
+\clearpage
+
+
+
+
+\appendix
+
+\clearpage
+
+\section*{Appendix A.Questionnaire}
+
+\bigskip
+
+\begin{enumerate}
+
+%%---------------- Q1 ----------------
+\item[Q.1.] In your opinion, do you think prices have gone up or down compared with a
+year ago? (By ``prices'' we mean the overall level of prices of the goods and services
+you purchase, including consumption tax.)
+	\begin{enumerate}[(1)]
+	\item Have gone up significantly
+	\item Have gone up slightly
+	\item Have been unchanged
+	\item Have gone down slightly
+	\item Have gone down significantly
+	\end{enumerate}
+
+\
+
+%%---------------- Q2 ----------------
+\item[Q.2.] In your opinion, how much do you think prices have changed year-on-year
+compared with a year ago?
+	\begin{itemize}
+	\item[]
+	\begin{tabular}{@{}r@{\ }l@{\hspace{8mm}}l@{}}
+	(1)  & Around $+12\%$ or higher & ($+11.5\%$ or higher)\\
+	(2)  & Around $+11\%$           & ($+10.5\%$ to $+11.4\%$)\\
+	(3)  & Around $+10\%$           & ($+9.5\%$ to $+10.4\%$)\\
+	(4)  & Around $+9\%$            & ($+8.5\%$ to $+9.4\%$)\\
+	(5)  & Around $+8\%$            & ($+7.5\%$ to $+8.4\%$)\\
+	(6)  & Around $+7\%$            & ($+6.5\%$ to $+7.4\%$)\\
+	(7)  & Around $+6\%$            & ($+5.5\%$ to $+6.4\%$)\\
+	(8)  & Around $+5\%$            & ($+4.5\%$ to $+5.4\%$)\\
+	(9)  & Around $+4\%$            & ($+3.5\%$ to $+4.4\%$)\\
+	(10) & Around $+3\%$            & ($+2.5\%$ to $+3.4\%$)\\
+	(11) & Around $+2\%$            & ($+1.5\%$ to $+2.4\%$)\\
+	(12) & Around $+1\%$            & ($+0.5\%$ to $+1.4\%$)\\
+	(13) & Around $+0\%$            & ($-0.5\%$ to $+0.4\%$)\\
+	(14) & Around $-1\%$            & ($-1.5\%$ to $-0.6\%$)\\
+	(15) & Around $-2\%$ or lower   & ($-1.6\%$ or lower)
+	\end{tabular}
+	\end{itemize}
+
+\
+
+%%---------------- Q3 ----------------
+\item[Q.3.] What do you think the consumption tax rate on food will be from April next year?
+	\begin{enumerate}[(1)]
+	\item 0\%
+	\item 1\%
+	\item 2\%
+	\item 3\%
+	\item 4\%
+	\item 5\%
+	\item 6\%
+	\item 7\%
+	\item 8\%
+	\item 9\%
+	\item 10\%
+	\end{enumerate}
+
+\
+
+%%---------------- Q4 ----------------
+\item[Q.4.] Over the next year, do you think prices will go up or down?
+	\begin{enumerate}[(1)]
+	\item Will go up significantly
+	\item Will go up slightly
+	\item Will be unchanged
+	\item Will go down slightly
+	\item Will go down significantly
+	\end{enumerate}
+
+\
+
+%%---------------- Q5 ----------------
+\item[Q.5.] Over the next year, how likely do you think that changes (1)--(7) below
+will occur in the rate of price increase? Please enter a number for each. The numbers
+should total 100.
+	\begin{itemize}
+	\item[] In this question, you will think about the percent chance of something
+	happening in the future. 0 means there is absolutely no chance, and 100 means that
+	it is absolutely certain. For example:
+	\end{itemize}
+	\begin{itemize}
+	\item[] 2--5\%: ``almost no chance''
+	\item[] around 18\%: ``not much chance''
+	\item[] 47--52\%: ``a pretty even chance''
+	\item[] around 83\%: ``a very good chance''
+	\item[] 95--98\%: ``almost certain''
+	\end{itemize}
+	\begin{enumerate}[(1)]
+	\item increase by 12\% or more \hfill \underline{\hspace{20mm}} \%
+	\item increase by 8\% to less than 12\% \hfill \underline{\hspace{20mm}} \%
+	\item increase by 4\% to less than 8\% \hfill \underline{\hspace{20mm}} \%
+	\item increase by 2\% to less than 4\% \hfill \underline{\hspace{20mm}} \%
+	\item increase by 0\% to less than 2\% \hfill \underline{\hspace{20mm}} \%
+	\item decrease by 0\% to less than 2\% \hfill \underline{\hspace{20mm}} \%
+	\item decrease by 2\% or more \hfill \underline{\hspace{20mm}} \%
+	\end{enumerate}
+	
+\
+
+%%---------------- Q6 (information screen) ----------------
+\item[Q.6.] Please read the information below.
+	\begin{itemize}
+	\item[] {\bf Group B (placebo):}
+	``According to estimates by the Ministry of Internal Affairs and Communications,
+	Japan's population as of May this year had decreased by 0.4\% compared with the
+	previous year.''
+	\item[] {\bf Group C (treatment 1):}
+	``The Bank of Japan expects prices, excluding fresh food, to increase by 2.8\%
+	compared with the previous year in the current fiscal year.''
+	\item[] {\bf Group D (treatment 2):}
+	``The Bank of Japan has set its price stability target at a year-on-year rate of
+	increase of 2\%.''
+	\end{itemize}
+
+\
+
+%%---------------- Q7 (comprehension check) ----------------
+\item[Q.7.]
+
+	\smallskip
+	\noindent
+	{\bf Group B:} According to estimates by the Ministry of Internal Affairs and
+	Communications, how much had Japan's population as of May this year changed
+	compared with the previous year?
+	\begin{enumerate}[(1)]
+	\item decrease of 1.4\%
+	\item decrease of 0.4\%
+	\item increase of 0.4\%
+	\item increase of 1.4\%
+	\end{enumerate}
+
+	\smallskip
+	\noindent
+	{\bf Group C:} By how much did the Bank of Japan expect prices excluding fresh food
+	to rise this fiscal year compared with the previous year?
+	\begin{enumerate}[(1)]
+	\item increase by 1.8\%
+	\item increase by 2.8\%
+	\item increase by 3.8\%
+	\item increase by 4.8\%
+	\end{enumerate}
+
+	\smallskip
+	\noindent
+	{\bf Group D:} At what year-on-year rate of increase has the Bank of Japan set its
+	price stability target?
+	\begin{enumerate}[(1)]
+	\item 0\%
+	\item 1\%
+	\item 2\%
+	\item 3\%
+	\end{enumerate}
+
+\
+
+%%---------------- Q8 ----------------
+\item[Q.8.] I would like to ask again about the price outlook. Over the next year, how
+much do you think prices will change year-on-year?
+\begin{itemize}
+	\item[]
+	\begin{tabular}{@{}r@{\ }l@{\hspace{8mm}}l@{}}
+	(1)  & Around $+12\%$ or higher & ($+11.5\%$ or higher)\\
+	(2)  & Around $+11\%$           & ($+10.5\%$ to $+11.4\%$)\\
+	(3)  & Around $+10\%$           & ($+9.5\%$ to $+10.4\%$)\\
+	(4)  & Around $+9\%$            & ($+8.5\%$ to $+9.4\%$)\\
+	(5)  & Around $+8\%$            & ($+7.5\%$ to $+8.4\%$)\\
+	(6)  & Around $+7\%$            & ($+6.5\%$ to $+7.4\%$)\\
+	(7)  & Around $+6\%$            & ($+5.5\%$ to $+6.4\%$)\\
+	(8)  & Around $+5\%$            & ($+4.5\%$ to $+5.4\%$)\\
+	(9)  & Around $+4\%$            & ($+3.5\%$ to $+4.4\%$)\\
+	(10) & Around $+3\%$            & ($+2.5\%$ to $+3.4\%$)\\
+	(11) & Around $+2\%$            & ($+1.5\%$ to $+2.4\%$)\\
+	(12) & Around $+1\%$            & ($+0.5\%$ to $+1.4\%$)\\
+	(13) & Around $+0\%$            & ($-0.5\%$ to $+0.4\%$)\\
+	(14) & Around $-1\%$            & ($-1.5\%$ to $-0.6\%$)\\
+	(15) & Around $-2\%$ or lower   & ($-1.6\%$ or lower)
+	\end{tabular}
+	\end{itemize}
+
+\
+
+%%---------------- Q9 ----------------
+\item[Q.9.] Please indicate your gender.
+	\begin{enumerate}[(1)]
+	\item Male
+	\item Female
+	\item Prefer not to answer
+	\end{enumerate}
+
+\
+
+%%---------------- Q10 ----------------
+\item[Q.10.] Please enter your age.
+	\begin{itemize}
+	\item[] \underline{\hspace{30mm}} years old
+	\end{itemize}
+
+\
+
+%%---------------- Q11 ----------------
+\item[Q.11.] Please indicate where you live. [Drop-down menu; the placeholder reads
+``Please select.'']
+	\begin{enumerate}[(1)]
+	\item[(1)] Hokkaido
+	\item[(2)] Aomori
+	\item[] $\sim$
+	\item[(47)] Okinawa
+	\item[(99)] Others
+	\end{enumerate}
+
+\
+
+%%---------------- Q12 ----------------
+\item[Q.12.] Are you married?
+	\begin{enumerate}[(1)]
+	\item Not married (never married, divorced, or widowed)
+	\item Married
+	\end{enumerate}
+
+\
+
+%%---------------- Q13 ----------------
+\item[Q.13.] Please indicate your occupation.
+	\begin{enumerate}[(1)]
+	\item Company employee / officer
+	\item Self-employed
+	\item Professionals (doctors, lawyers, hairdressers, designers, etc.)
+	\item Civil servant
+	\item Student
+	\item Housewife / househusband
+	\item Part-time workers and freelancers
+	\item Unemployed / retired
+	\item Others
+	\end{enumerate}
+
+\
+
+%%---------------- Q14 ----------------
+\item[Q.14.] Please indicate your educational background.
+	\begin{enumerate}[(1)]
+	\item Primary and secondary school graduate
+	\item High school graduate
+	\item Technical college graduate
+	\item Vocational school graduate
+	\item Junior college graduate
+	\item University graduate
+	\item Graduate-school graduate
+	\item Studying at or enrolled in school
+	\end{enumerate}
+
+\
+
+%%---------------- Q15 ----------------
+\item[Q.15.] Please indicate your household's total annual take-home income (total
+income excluding taxes and social contributions from January to December of the
+previous year).
+	\begin{enumerate}[(1)]
+	\item Less than 2 million yen
+	\item 2 million to less than 3 million yen
+	\item 3 million to less than 4 million yen
+	\item 4 million to less than 5.5 million yen
+	\item 5.5 million to less than 7.5 million yen
+	\item 7.5 million to less than 9.5 million yen
+	\item 9.5 million to less than 12 million yen
+	\item 12 million yen or more
+	\end{enumerate}
+
+\end{enumerate}
+
+\bigskip
+
+
+\end{document}
