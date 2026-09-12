@@ -1,17 +1,4 @@
-\# Main Study Prompts
-
-
-
-実行日: 2026-XX-XX
-
-使用モデル: 
-
-パラメータ: temperature=, top\_p=, max\_tokens=
-
-
-
-\## System Prompt
-
+Placebo-Population growth rate
 
 
 ```
