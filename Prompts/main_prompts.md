@@ -9,25 +9,25 @@ Placebo-Population growth rate
 
 
 
-\## Question Format
+Treatment1-BOJ Forecast
 
 
 
 ```
 
-（質問文全文）
+日本銀行は、今年度の生鮮食品を除く物価は、前の年度と比べて2.8％上昇すると予想しています。
 
 ```
 
 
 
-\## Treatment T1: Control
+Treatment2-BOJ Target
 
 
 
 ```
 
-（統制群への提示文）
+日本銀行は、物価安定の目標を前年比上昇率2％と定めています。
 
 ```
 
