@@ -31,15 +31,3 @@ Treatment2-BOJ Target
 
 ```
 
-
-
-\## Treatment T2: 
-
-
-
-```
-
-（処置群への提示文）
-
-```
-
